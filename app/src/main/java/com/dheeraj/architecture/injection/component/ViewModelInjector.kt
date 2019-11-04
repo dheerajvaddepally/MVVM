@@ -24,10 +24,4 @@ interface ViewModelInjector {
      */
     fun inject(postViewModel: PostViewModel)
 
-    @Component.Builder
-    interface Builder {
-        fun build(): ViewModelInjector
-
-        fun networkModule(networkModule: NetworkModule): Builder
-    }
 }
